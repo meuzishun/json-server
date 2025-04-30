@@ -39,48 +39,82 @@ Create a `db.json` file at the root of the project:
 ```json
 {
   "users": [
-    { "id": 1, "name": "Alice Johnson", "email": "alice@example.com" },
-    { "id": 2, "name": "Bob Smith", "email": "bob@example.com" },
-    { "id": 3, "name": "Charlie Rose", "email": "charlie@example.com" }
+    {
+      "id": "u1",
+      "name": "Alice Johnson",
+      "email": "alice@example.com"
+    },
+    {
+      "id": "u2",
+      "name": "Bob Smith",
+      "email": "bob@example.com"
+    },
+    {
+      "id": "u3",
+      "name": "Charlie Rose",
+      "email": "charlie@example.com"
+    }
   ],
   "posts": [
     {
-      "id": 1,
+      "id": "p1",
       "title": "Getting Started with JavaScript",
       "body": "JavaScript is a versatile language used on the web...",
-      "userId": 1,
-      "tags": [1, 2]
+      "userId": "u1",
+      "tags": ["t1", "t2"]
     },
     {
-      "id": 2,
+      "id": "p2",
       "title": "Understanding React Hooks",
       "body": "Hooks let you use state and lifecycle methods in functional components...",
-      "userId": 2,
-      "tags": [2, 3]
+      "userId": "u2",
+      "tags": ["t2", "t3"]
     },
     {
-      "id": 3,
+      "id": "p3",
       "title": "Tips for Writing Clean Code",
       "body": "Readable code is maintainable code...",
-      "userId": 1,
-      "tags": [4]
+      "userId": "u1",
+      "tags": ["t4"]
     }
   ],
   "comments": [
-    { "id": 1, "postId": 1, "userId": 2, "body": "Great intro, thanks!" },
-    { "id": 2, "postId": 1, "userId": 3, "body": "This was helpful." },
     {
-      "id": 3,
-      "postId": 2,
-      "userId": 1,
+      "id": "c1",
+      "postId": "p1",
+      "userId": "u2",
+      "body": "Great intro, thanks!"
+    },
+    {
+      "id": "c2",
+      "postId": "p1",
+      "userId": "u3",
+      "body": "This was helpful."
+    },
+    {
+      "id": "c3",
+      "postId": "p2",
+      "userId": "u1",
       "body": "Hooks took me a while to get used to!"
     }
   ],
   "tags": [
-    { "id": 1, "name": "JavaScript" },
-    { "id": 2, "name": "Frontend" },
-    { "id": 3, "name": "React" },
-    { "id": 4, "name": "Best Practices" }
+    {
+      "id": "t1",
+      "name": "JavaScript"
+    },
+    {
+      "id": "t2",
+      "name": "Frontend"
+    },
+    {
+      "id": "t3",
+      "name": "React"
+    },
+    {
+      "id": "t4",
+      "name": "Best Practices"
+    }
   ]
 }
 ```
