@@ -59,21 +59,21 @@ Create a `db.json` file at the root of the project:
     {
       "id": "p1",
       "title": "Getting Started with JavaScript",
-      "body": "JavaScript is a versatile language used on the web...",
+      "body": "JavaScript is a versatile language used on the web for both client-side and server-side development. It's known for its flexibility, dynamic typing, and integration with HTML and CSS. Beginners can start learning basic syntax, data types, and how to manipulate the DOM.",
       "userId": "u1",
       "tags": ["t1", "t2"]
     },
     {
       "id": "p2",
       "title": "Understanding React Hooks",
-      "body": "Hooks let you use state and lifecycle methods in functional components...",
+      "body": "Hooks let you use state and lifecycle methods in functional components, making React code cleaner and easier to maintain. The most commonly used hooks are useState and useEffect. They allow you to manage side effects and component state without writing class components.",
       "userId": "u2",
       "tags": ["t2", "t3"]
     },
     {
       "id": "p3",
       "title": "Tips for Writing Clean Code",
-      "body": "Readable code is maintainable code...",
+      "body": "Readable code is maintainable code, and it's a crucial part of professional development. Use meaningful names, keep functions short, and avoid deeply nested logic. Consistent formatting and comments where necessary can make your code easier for others (and future you) to understand.",
       "userId": "u1",
       "tags": ["t4"]
     }
